@@ -45,8 +45,8 @@ def tran():
   if lang_dict in t_lang:
     if len(txt)!=0:
       if len(txt)<=5000:
-        translate = boto3.client('translate', aws_access_key_id="AKIA2LPLQN2BX6NJ2ZHM", 
-                    aws_secret_access_key="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", 
+        translate = boto3.client('translate', aws_access_key_id="", 
+                    aws_secret_access_key="", 
                     region_name="us-west-1")
         result = translate.translate_text(Text=txt,
                                         SourceLanguageCode="en",
